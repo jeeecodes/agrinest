@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | AgriNest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">AgriNest</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="cart.html">Cart</a></li>
+  </ul>
+</nav>
+
+<section class="categories">
+  <h2>Our Products</h2>
+
+  <div class="filters">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('Vegetables')">Vegetables</button>
+    <button onclick="filterCategory('Fruits')">Fruits</button>
+    <button onclick="filterCategory('Grains')">Grains</button>
+  </div>
+
+  <div id="productGrid" class="category-grid"></div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 AgriNest</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

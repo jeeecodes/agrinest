@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FAF7F2;
+  color: #2B2B2B;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #2e7d32; /* Green navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.logo {
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+
+/* HERO */
+.hero {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  background: linear-gradient(to right, #2F6B4F, #8C4A2F);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.hero-btn {
+  background-color: #E6B566;
+  color: #2B2B2B;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* CATEGORIES */
+.categories {
+  padding: 60px;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.category-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* WHY US */
+.why-us {
+  padding: 60px;
+  background-color: #F1ECE4;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.why-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #2F6B4F;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* LOGIN PAGE */
+.login-section {
+  height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.login-box {
+  width: 380px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #43a047;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}

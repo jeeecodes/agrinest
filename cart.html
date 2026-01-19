@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart | AgriNest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">AgriNest</div>
+  <ul class="nav-links">
+    <li><a href="products.html">Products</a></li>
+  </ul>
+</nav>
+
+<section class="categories">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3 id="total"></h3>
+  <button onclick="checkout()">Place Order</button>
+</section>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let total = 0;
+
+fetch("http://127.0.0.1:5000/products")
+  .then(res => res.json())
+  .then(products => {
+    cart.forEach(id => {
+      let p = products.find(x => x.id === id);
+      if (p) {
+        document.getElementById("cartItems").innerHTML +=
+          `<li>${p.name} - ₹${p.price}</li>`;
+        total += p.price;
+      }
+    });
+    document.getElementById("total").innerText = "Total: ₹" + total;
+  });
+
+function checkout() {
+  fetch("http://127.0.0.1:5000/order", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      items: cart,
+      total: total
+    })
+  });
+  alert("Order placed!");
+  localStorage.removeItem("cart");
+}
+</script>
+
+</body>
+</html>

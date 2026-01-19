@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Tomatoes",
+    "price": 40,
+    "farmer": "Ramesh",
+    "category": "Vegetables"
+  },
+  {
+    "id": 2,
+    "name": "Apples",
+    "price": 120,
+    "farmer": "Suresh",
+    "category": "Fruits"
+  },
+  {
+    "id": 3,
+    "name": "Rice",
+    "price": 60,
+    "farmer": "Mahesh",
+    "category": "Grains"
+  }
+]
